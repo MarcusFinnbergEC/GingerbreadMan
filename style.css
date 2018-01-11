@@ -119,6 +119,7 @@ body { background-color:#333; }
     }
 }
 #Gameboard{
+    position: relative;
     background-color: darkred;
     border: solid black 5px;
     border-radius: 15px;
@@ -132,4 +133,39 @@ body { background-color:#333; }
     animation-play-state: paused;
     -webkit-transform: perspective(600px) rotateX(45deg);
     -webkit-transform-style: preserve-3d;
+    overflow: hidden;
+}
+
+.snow {
+    margin-left: 5%;
+    animation-name: example;
+    animation: example 5s linear;
+}
+
+.path{
+    width: 200px;
+    position: absolute;
+    -webkit-clip-path: polygon(50% 0%, 79% 48%, 69% 100%, 28% 100%, 14% 70%, 39% 38%);
+    clip-path: polygon(50% 0%, 79% 48%, 69% 100%, 28% 100%, 14% 70%, 39% 38%);
+    animation-name: example;
+    animation: example 5s linear;
+}
+
+.snow:hover{
+    visibility: hidden;
+
+}
+
+.snow.path:hover{
+
+
+}
+
+@keyframes example {
+    from {
+        transform: translateY(-1000px);
+    }
+    to {
+        transform: translateY(500px);
+    }
 }
