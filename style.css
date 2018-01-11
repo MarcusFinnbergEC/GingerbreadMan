@@ -2,8 +2,12 @@ body { background-color:#333; }
 #wrapper{
     display: flex;
     top:0;
-    background:#333;
-    width:100%;
+    background: #45484d; /* Old browsers */
+    background: -moz-linear-gradient(top, #000000 0%, #45484d 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #000000 0%,#45484d 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #000000 0%,#45484d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#45484d',GradientType=0 );
+    width:100vw;
     height:100%;
     position: absolute;
     left:0;
@@ -14,15 +18,35 @@ body { background-color:#333; }
     width: 100%;
 
 }
-.fallingSnow span {
+.fallingSnow .sf{
     display: inline-block;
     width: 20px;
     height: 21px;
     margin: -280px 60px 54px  -34px;
-    background:url("images/snowflake.png");
+    background:url("./images/snowflake.png");
     overflow: hidden;
     -webkit-animation: fallingSnow 8s infinite cubic-bezier(0,0,0.39,0.29);
     -moz-animation: fallingSnow 8s infinite cubic-bezier(0,0,0.39,0.29);
+}
+.fallingSnow .sfm {
+    display: inline-block;
+    width: 15px;
+    height: 16px;
+    margin: -280px 60px 54px -34px;
+    background: url("./images/snowflakemedium.png");
+    overflow: hidden;
+    -webkit-animation: fallingSnow 8s infinite cubic-bezier(0, 0, 0.39, 0.29);
+    -moz-animation: fallingSnow 8s infinite cubic-bezier(0, 0, 0.39, 0.29);
+}
+.fallingSnow .sfs {
+    display: inline-block;
+    width: 10px;
+    height: 11px;
+    margin: -280px 60px 54px -34px;
+    background: url("./images/snowflakesmall.png");
+    overflow: hidden;
+    -webkit-animation: fallingSnow 8s infinite cubic-bezier(0, 0, 0.39, 0.29);
+    -moz-animation: fallingSnow 8s infinite cubic-bezier(0, 0, 0.39, 0.29);
 }
 .fallingSnow span:nth-child(5n+5) {
 
