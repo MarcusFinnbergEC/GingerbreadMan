@@ -19,7 +19,7 @@ body { background-color:#333; }
     width: 20px;
     height: 21px;
     margin: -280px 60px 54px  -34px;
-    background:url("./snowflake.png");
+    background:url("images/snowflake.png");
     overflow: hidden;
     -webkit-animation: fallingSnow 8s infinite cubic-bezier(0,0,0.39,0.29);
     -moz-animation: fallingSnow 8s infinite cubic-bezier(0,0,0.39,0.29);
