@@ -143,12 +143,16 @@ body { background-color:#333; }
 }
 
 .path{
-    width: 200px;
+    width: 40%;
     position: absolute;
-    -webkit-clip-path: polygon(50% 0%, 79% 48%, 69% 100%, 28% 100%, 14% 70%, 39% 38%);
-    clip-path: polygon(50% 0%, 79% 48%, 69% 100%, 28% 100%, 14% 70%, 39% 38%);
+    -webkit-clip-path: polygon(85% 0, 48% 48%, 60% 56%, 57% 90%, 100% 100%, 26% 100%, 23% 84%, 43% 73%, 24% 53%, 60% 0);
+    clip-path: polygon(85% 0, 48% 48%, 60% 56%, 57% 90%, 100% 100%, 26% 100%, 23% 84%, 43% 73%, 24% 53%, 60% 0);
     animation-name: example;
     animation: example 5s linear;
+}
+
+.path:hover{
+    cursor: url("images/gingerman_mouse_32.png"), auto;
 }
 
 .snow:hover{
