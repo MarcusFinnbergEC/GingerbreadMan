@@ -152,7 +152,7 @@ body { background-color:#333; }
 }
 
 .path:hover{
-    cursor: url("images/gingerman_mouse_32.png"), auto;
+    cursor: url("images/gingerman_mouse_32.png") 16 16, default;
 }
 
 /*.snow:hover{
