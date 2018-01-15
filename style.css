@@ -130,7 +130,7 @@ body { background-color:#333; }
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    animation-play-state: paused;
+    /*animation-play-state: paused;*/
     -webkit-transform: perspective(600px) rotateX(45deg);
     -webkit-transform-style: preserve-3d;
     overflow: hidden;
@@ -155,10 +155,10 @@ body { background-color:#333; }
     cursor: url("images/gingerman_mouse_32.png"), auto;
 }
 
-.snow:hover{
+/*.snow:hover{
     visibility: hidden;
 
-}
+}*/
 
 .snow.path:hover{
 
@@ -175,4 +175,67 @@ body { background-color:#333; }
     to {
         transform: translateY(500px);
     }
+}
+#gameover{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: darkred;
+    border: solid black 5px;
+    border-radius: 15px;
+    width: 60%;
+    height: 600px;
+    margin-left: 20%;
+    animation-play-state: paused;
+    -webkit-transform: perspective(600px) rotateX(45deg);
+    -webkit-transform-style: preserve-3d;
+}
+#textGameOver{
+    width: 100%;
+    height:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#textGameOver p{
+    padding-top: 10%;
+}
+#buttonsGameOver{
+    width: 100%;
+    height:25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.button{
+    width: 100px;
+    height: 25px;
+    border: white solid 2px;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+}
+.button:first-of-type{
+    margin-right: 20px;
+}
+a:hover{
+    background-color: white;
+    color: darkred;
+}
+h1{
+    color: white;
+}
+p{
+    color: white;
+}
+em{
+    color: white;
 }
