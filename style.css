@@ -192,26 +192,42 @@ body { background-color:#333; }
     -webkit-transform: perspective(600px) rotateX(45deg);
     -webkit-transform-style: preserve-3d;
 }
-#textGameOver{
-    width: 100%;
-    height:50%;
-    display: flex;
+#winner{
+    display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex-wrap: nowrap;
-    transform: none;
+    flex-wrap: wrap;
+    background-color: darkred;
+    box-shadow: 0px 0px 60px 20px #000000, 0px 0px 50px 30px rgba(129, 0 ,0 , 0.6) ;
+    border-radius: 15px;
+    width: 60%;
+    height: 600px;
+    margin-left: 20%;
+    animation-play-state: paused;
+    -webkit-transform: perspective(600px) rotateX(45deg);
+    -webkit-transform-style: preserve-3d;
 }
-#textGameOver h1
+.textMessage{
+     width: 100%;
+     height:50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     flex-wrap: nowrap;
+     transform: none;
+ }
+.textMessage h1
 {
     font-family: 'Aladin', cursive;
     font-size: 4.5rem;
 }
 
-#textGameOver p{
+.textMessage p{
     padding-top: 10%;
 }
-#buttonsGameOver{
+.buttonsMessage{
     width: 100%;
     height:25%;
     display: flex;

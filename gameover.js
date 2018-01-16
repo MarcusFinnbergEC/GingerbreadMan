@@ -10,3 +10,12 @@ function closeModal() {
     path.style.animation.play.state = 'paused';
     snow.style.animation.play.state = 'paused';
 }
+
+var img = document.getElementById('winningPicture');
+img.addEventListener('mouseover', closeModal);
+function closeModal() {
+    var gameBoard = document.getElementById('Gameboard');
+    var winner = document.getElementById('winner');
+    gameBoard.style.visibility = 'hidden';
+    winner.style.display = 'flex';
+}
