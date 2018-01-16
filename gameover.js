@@ -1,6 +1,6 @@
-var img = document.getElementById('snowInGame');
-img.addEventListener('mouseover', closeModal);
-function closeModal() {
+var imgLoser = document.getElementById('snowInGame');
+imgLoser.addEventListener('mouseover', loserModal);
+function loserModal() {
     var gameBoard = document.getElementById('Gameboard');
     var gameOver = document.getElementById('gameover');
     var path = document.getElementsByClassName('path');
@@ -11,9 +11,9 @@ function closeModal() {
     snow.style.animation.play.state = 'paused';
 }
 
-var img = document.getElementById('winningPicture');
-img.addEventListener('mouseover', closeModal);
-function closeModal() {
+var imgWinner = document.getElementById('winningPicture');
+imgWinner.addEventListener('mouseover', winnerModal);
+function winnerModal() {
     var gameBoard = document.getElementById('Gameboard');
     var winner = document.getElementById('winner');
     gameBoard.style.visibility = 'hidden';
