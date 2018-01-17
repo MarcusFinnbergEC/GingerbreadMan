@@ -178,10 +178,10 @@ body { background-color:#333; }
 
 @keyframes example {
     from {
-        transform: translateY(-1000px);
+        transform: translateY(-1700px);
     }
     to {
-        transform: translateY(1000px);
+        transform: translateY(900px);
     }
 }
 #startGame{
