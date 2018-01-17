@@ -16,7 +16,7 @@ function gameModal() {
 
         function resetTimer() {
             clearTimeout(t);
-            t = setTimeout(logout, 3000);  // time is in milliseconds
+            t = setTimeout(logout, 2000);  // time is in milliseconds
         }
     }
     idleLogout();
