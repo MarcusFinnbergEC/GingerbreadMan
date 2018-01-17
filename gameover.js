@@ -1,3 +1,28 @@
+var win = false;
+var t;
+function idleLogout() {
+    window.onload = resetTimer;
+    window.onmousemove = resetTimer;
+
+    function logout() {
+        loserModal();
+    }
+
+    function winscreen() {
+        winnerModal();
+    }
+
+    function resetTimer() {
+        clearTimeout(t);
+        if (win === false){
+        t = setTimeout(logout, 2000);  // time is in milliseconds
+        }
+        else {
+            winnerModal();
+        }
+    }
+}
+
 var startGameButton = document.getElementById('startGameButton');
 startGameButton.addEventListener('click', gameModal);
 function gameModal() {
@@ -5,20 +30,6 @@ function gameModal() {
     var gameBoard = document.getElementById('Gameboard');
     startGame.style.display = 'none';
     gameBoard.style.display = 'flex';
-    function idleLogout() {
-        var t;
-        window.onload = resetTimer;
-        window.onmousemove = resetTimer;
-
-        function logout() {
-            loserModal();
-        }
-
-        function resetTimer() {
-            clearTimeout(t);
-            t = setTimeout(logout, 2000);  // time is in milliseconds
-        }
-    }
     idleLogout();
 }
 
@@ -38,4 +49,5 @@ function winnerModal() {
     var winner = document.getElementById('winner');
     gameBoard.style.visibility = 'hidden';
     winner.style.display = 'flex';
+    win = true;
 }
