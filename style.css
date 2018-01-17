@@ -248,6 +248,11 @@ body { background-color:#333; }
     -webkit-transform: perspective(600px) rotateX(45deg);
     -webkit-transform-style: preserve-3d;
 }
+
+#winner > .textMessage > em{
+    font-size: 2rem;
+    color: white;
+}
 .textMessage{
      width: 100%;
      height:50%;
@@ -271,6 +276,18 @@ body { background-color:#333; }
     margin-top: 100px;
     font-family: 'Aladin', cursive;
     font-size: 4.5rem;
+}
+
+#startGame > .textMessage > em{
+    color: white;
+    font-size: 2rem;
+    margin-top: 50px;
+}
+
+#gameover > .textMessage > em{
+    color: white;
+    font-size: 2rem;
+    margin-top: 20px;
 }
 
 .textMessage p{
@@ -304,8 +321,3 @@ a:hover{
     color: darkred;
 }
 
-em{
-    color: white;
-    font-size: 3rem;
-    margin-top: 50px;
-}
