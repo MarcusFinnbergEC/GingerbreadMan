@@ -1,3 +1,12 @@
+var startGameButton = document.getElementById('startGameButton');
+startGameButton.addEventListener('click', gameModal);
+function gameModal() {
+    var startGame = document.getElementById('startGame');
+    var gameBoard = document.getElementById('Gameboard');
+    startGame.style.display = 'none';
+    gameBoard.style.display = 'flex';
+}
+
 var imgLoser = document.getElementById('snowInGame');
 imgLoser.addEventListener('mouseover', loserModal);
 function loserModal() {
