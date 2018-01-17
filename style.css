@@ -218,7 +218,7 @@ body { background-color:#333; }
     padding: 5px;
 }
 #startGameButton:hover{
-    cursor: hand;
+    cursor: pointer;
     background-color: white;
     color: darkred;
 }
