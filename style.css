@@ -168,14 +168,6 @@ body { background-color:#333; }
 
 }*/
 
-.snow.path:hover{
-
-    /*Hampus Kod här*/
-    /*Hampus Kod här*/
-    /*Hampus Kod här*/
-
-}
-
 @keyframes example {
     from {
         transform: translateY(-1700px);
@@ -188,14 +180,8 @@ body { background-color:#333; }
     position: relative;
     background-color: rgba(0, 0, 0, 0.2);
     width: 100%;
-   /* background-color: darkred;
-    box-shadow: 0px 0px 60px 20px #000000, 0px 0px 50px 30px rgba(129, 0 ,0 , 0.6) ;
-    border-radius: 15px;
+    height: 100vh;
     display: flex;
-    width: 60%;
-    height: 600px;
-    margin-left: 20%;
-    padding:0;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -207,6 +193,12 @@ body { background-color:#333; }
 #startGame ul{
     color: white;
     font-size: 20px;
+    margin: 0;
+    padding:15px 0 0 0;
+}
+#startGame ul > li {
+
+    padding-bottom: 10px;
 }
 
 #startGameButton{
@@ -256,6 +248,11 @@ body { background-color:#333; }
     -webkit-transform: perspective(600px) rotateX(45deg);
     -webkit-transform-style: preserve-3d;
 }
+
+#winner > .textMessage > em{
+    font-size: 2rem;
+    color: white;
+}
 .textMessage{
      width: 100%;
      height:50%;
@@ -281,8 +278,20 @@ body { background-color:#333; }
     font-size: 4.5rem;
 }
 
+#startGame > .textMessage > em{
+    color: white;
+    font-size: 2rem;
+    margin-top: 50px;
+}
+
+#gameover > .textMessage > em{
+    color: white;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
 .textMessage p{
-    padding-top: 5%;
+    padding-top: 15px;
     color: white;
 }
 .buttonsMessage{
@@ -312,8 +321,3 @@ a:hover{
     color: darkred;
 }
 
-em{
-    color: white;
-    font-size: 3rem;
-    margin-top: 50px;
-}
