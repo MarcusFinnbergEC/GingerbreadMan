@@ -181,7 +181,7 @@ body { background-color:#333; }
         transform: translateY(-1000px);
     }
     to {
-        transform: translateY(500px);
+        transform: translateY(1000px);
     }
 }
 #gameover{
