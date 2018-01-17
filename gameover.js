@@ -5,6 +5,21 @@ function gameModal() {
     var gameBoard = document.getElementById('Gameboard');
     startGame.style.display = 'none';
     gameBoard.style.display = 'flex';
+    function idleLogout() {
+        var t;
+        window.onload = resetTimer;
+        window.onmousemove = resetTimer;
+
+        function logout() {
+            loserModal();
+        }
+
+        function resetTimer() {
+            clearTimeout(t);
+            t = setTimeout(logout, 3000);  // time is in milliseconds
+        }
+    }
+    idleLogout();
 }
 
 var imgLoser = document.getElementById('snowInGame');
