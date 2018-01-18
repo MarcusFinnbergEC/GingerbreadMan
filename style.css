@@ -293,7 +293,9 @@ body { background-color:#333; }
 .textMessage p{
     padding-top: 15px;
     color: white;
+    font-size: 1.4rem;
 }
+
 .buttonsMessage{
     width: 100%;
     height:25%;
@@ -303,6 +305,7 @@ body { background-color:#333; }
     flex-direction: row;
     flex-wrap: wrap;
 }
+
 .button{
     width: 100px;
     height: 25px;
@@ -311,7 +314,7 @@ body { background-color:#333; }
     color: white;
     text-align: center;
     text-decoration: none;
-    padding: 5px;
+    padding: 8px;
 }
 .button:first-of-type{
     margin-right: 20px;
